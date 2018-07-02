@@ -6,7 +6,7 @@
 	<version>1.0</version>
 	<category>enhancement</category>
 	<description>This plugin give the user an option for local time zone setting.</description>
-	<website>https://github.com/casper</website>
+	<website>https://github.com/casperrutten</website>
 	<copyright>(C) casper 2018</copyright>
 	<license>GNU Public License version 2</license>
 	<requires>
