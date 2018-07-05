@@ -17,12 +17,13 @@ if (!$user_timezone = $user->timezone)
 
 if ($user) {
 	$title = elgg_echo('timezones:user:set:timezone');
-	$content = '<div>' . elgg_echo('timezones:user:current_time') . ' ' . date("d M Y, G:i") . '<br /><div><br />';
-	$content .= elgg_echo('timezones:user:timezone:label') . ': ';
+	$content = '<div><label>' . elgg_echo('timezones:user:current_time') . '</label> ' . date("d M Y, G:i") . '<br /><div><br />';
+	$content .= '<div><label>' . elgg_echo('timezones:user:timezone:label') . ':</label> ';
 	$content .= elgg_view("input/select", array(
 		'name' => 'timezone',
 		'value' => $user_timezone,
 		'options_values' => timezone_identifiers_list(),
-	));
+	)) . '</div><br />';
 	echo elgg_view_module('info', $title, $content);
 }
+
